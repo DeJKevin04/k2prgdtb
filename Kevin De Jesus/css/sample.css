@@ -1,0 +1,90 @@
+
+	* {
+	box-sizing: border-box;
+	}
+			
+	/* CSS property for header section */
+	.header {
+	background-color: rosybrown;
+	padding: 20px; 
+	text-align: center;
+	}
+			
+	.header h2 {
+		color: white;
+		font-family: monospace;
+	} 
+	/* CSS property for navigation menu */
+	.nav_menu {
+	overflow: hidden;
+	background-color: #333;
+    }
+	.nav_menu a {
+	float: left;
+	display: block;
+	color: white;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+	}
+	.nav_menu a:hover {
+	background-color: white;
+	color: green;
+	}
+			
+	/* CSS property for content section */
+	.columnA, .columnB, .columnC {
+	float: left;
+	width: 31%;
+	padding: 15px;
+	margin: 20px;
+	text-align:justify;
+	}
+	.body{
+		background-color: navajowhite;       
+		overflow-y: scroll;       
+	}
+	.container1 #img1{
+		width: 490px;
+		height: 390px;
+		border-radius: 100px;
+	}
+	.container1 p{
+		color: black; 
+		font-size: 18px;
+		text-align: justify;
+		width: 490px;
+		margin-top: 10px;
+	} 
+	.footer {
+		padding: 20px;
+		background-color: lightblue;
+		text-align: center;
+		width: 60%; 
+		margin-left: auto;
+		margin-right: auto;
+		margin-top: ; 
+		border-top-left-radius: 15px;
+		border-top-right-radius: 15px;
+	}
+	/* ============ desktop view ============ */
+	@media all and (min-width: 992px) {
+	.navbar .nav-item .dropdown-menu{ display: none; }
+	.navbar .nav-item:hover .nav-link{   }
+	.navbar .nav-item:hover .dropdown-menu{ display: block; }
+	.navbar .nav-item .dropdown-menu{ margin-top:0; }
+	}	
+	/* ============ desktop view .end// ============ */
+			
+	/* Media query to set website layout
+	according to screen size */
+	@media screen and (max-width:600px) {
+	.columnA, .columnB, .columnC {
+	width: 50%;
+	}
+	}
+	@media screen and (max-width:400px) {
+	.columnA, .columnB, .columnC {
+	width: 100%;
+	}
+	}

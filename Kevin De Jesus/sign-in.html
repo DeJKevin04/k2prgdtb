@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Contact Form</title>
+<link rel="stylesheet" href="css/style.css">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="icon" type="image/icon" href="images/img2.jpg" style="">
+</head>
+<body class="body">
+	<div class = "header">
+            <h2>
+                OSTRICH
+            </h2>
+        </div>
+        <!-- navigation menu for website layout -->
+        <nav class="navbar navbar-expand-lg bg-warning navbar-light">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#"></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar" id='collapsenavbar'>
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="collapsibleNavbar" >
+      <ul class="navbar-nav">
+        <li class="nav-item active">
+            <a class="nav-link active" href="webpage1.html">Home</a>
+        </li>
+        <li class="nav-item active">
+            <a class="nav-link active" href="sign-in.html"></a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle active" href="#" role="button" data-bs-toggle="dropdown">More About Ostrich</a>
+          <ul class="dropdown-menu">
+            <li>
+                <a class="dropdown-item" href="fact1.html">Speed & Movement</a>
+            </li>
+            <li>
+                <a class="dropdown-item" href="fact2.html">Herds & Reproduction</a> 
+            </li>
+            <li>
+                <a class="dropdown-item" href="fact3.html"> Behavior & Diet </a>
+            </li>
+           </ul>
+        </li>
+      </ul>
+      <ul class="navbar-nav ms-auto" id="navbar2">
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle active" href="#" role="button" data-bs-toggle="dropdown">Python</a>
+          <ul class="dropdown-menu">
+            <li>
+                <a class="dropdown-item" href="python2.html">Python Table</a>
+            </li>
+            <li>
+                <a class="dropdown-item" href="python3.html">Python Bar Graph</a>
+            </li>
+            <li>
+                <a class="dropdown-item" href="#"></a>
+            </li>
+           </ul>
+        </li>
+        <li class="nav-item active">
+            <a class="nav-link active" href="sign-in.html">Contact Us</a>
+        </li>
+        <li class="nav-item active">
+            <a class="nav-link active" href="webpage1.html">  </a></li>
+        <li class="nav-item active">
+            <a class="nav-link active" href="g11webpage.html"></a>
+        </li>
+        <li class="nav-item active">
+            <a class="nav-link active" href="downloads.html"> Downloads </a>
+        </li>
+      </ul>
+    </div> <!-- navbar-collapse.// -->
+    </div> <!-- container-fluid.// -->
+</nav><br>
+    <div class="container mt2">
+    <div class="col-lg-9" id="sign-in">
+<div class="form">
+<h2>Contact Form</h2><br>
+<form name="frmContact" method="post" action="contact.php">
+<p>
+<label for="Name">Name </label>
+<input type="text" name="txtName" id="txtName" required>
+</p>
+<p>
+<label for="email">Email</label>
+<input type="text" name="txtEmail" id="txtEmail" required>
+</p>
+<p>
+<label for="address">Address</label>
+<input type="text" name="txtAddress" id="txtAddress" required>
+</p>
+<p>
+<label for="message">Message</label>
+<textarea name="txtMessage" id="txtMessage" required></textarea>
+</p>
+<p>&nbsp;</p>
+<p>
+<input type="submit" name="Submit" id="Submit" value="Submit">
+</p>
+</form>
+</div>
+</div>
+</div>
+</body>
+<div class="mt-5 p-4 bg-warning text-black text-center">
+            <p>&copy; Created by Kevin De Jesus</p>
+        </div>
+</body>
+</html>
