@@ -32,10 +32,10 @@ $conn->close();
 // ... (Any support related code or messages)
 
 // Automatic redirect to index.php (you can use a delay if needed)
-header('Refresh: 5; URL=index.php');
+header('Refresh: 5; URL=index.html');
 echo 'You will be redirected to the main page in 5 seconds.';
 
-// Or provide a manual link to index.php
+// Or provide a manual link to index.html
 echo '<a href="index.php">Return to Main Page</a>';
 
 ?>
