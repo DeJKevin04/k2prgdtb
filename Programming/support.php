@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form UI</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <?php
+    
+    echo "";
+
+    ?>
+
+<div class="form-container">
+  <form action="submit_form.php" method="post" id="feedbackForm">
+    <form id="feedbackForm">
+      <div class="form-group">
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required>
+      </div>
+
+      <div class="form-group">
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required>
+      </div>
+
+      <div class="form-group">
+          <label for="reportType">Report Type:</label>
+          <select id="reportType" name="reportType" required>
+              <option value="" disabled selected>Select your option</option>
+              <option value="bug">Bug</option>
+              <option value="feedback">Feedback</option>
+              <!-- Add other options as needed -->
+          </select>
+      </div>
+
+      <div class="form-group">
+          <label for="comments">Comments:</label>
+          <textarea id="comments" name="comments" rows="4" required></textarea>
+      </div>
+      <button type="submit" class="submit-btn">Submit</button>
+  </form>
+</form>
+  
+</div>
+
+<div id="thankYouMessage" class="thank-you-message"></div>
+
+<script src="script.js"></script>
+</body>
+</html>

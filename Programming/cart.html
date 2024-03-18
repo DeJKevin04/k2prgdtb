@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Top Selling Items</title>
+<link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+
+  <div class="search-bar">
+    <input type="text" placeholder="Find your plant">
+    <button type="button" class="delete-btn" onclick="clearSearchInput()">
+      <!-- Replace 'delete-icon.png' with the actual path to your delete icon image -->
+      <img src="https://th.bing.com/th/id/R.1535b6a55f4c069d2390c6396e2bec7e?rik=kQeayOpRuhVe5g&riu=http%3a%2f%2fcdn.onlinewebfonts.com%2fsvg%2fimg_110190.png&ehk=2fd0gdYpg%2bg1paY3qKkiJlRjWiMMsJK5%2fBbHOumKK9I%3d&risl=&pid=ImgRaw&r=0" alt="Delete">
+    </button>
+    <button type="submit" class="search-btn">
+      <img src="https://www.freeiconspng.com/uploads/search-icon-png-5.png" alt="Search">
+    </button>
+    <!-- Add this HTML for the show-all button inside your search-bar div -->
+<button type="button" class="show-all-icon" onclick="showAllItems()">
+  <!-- Replace 'show-all-icon.png' with the actual path to your show-all icon image -->
+  <img src="https://static.thenounproject.com/png/671961-200.png" alt="Show All">
+</button>
+  </div> 
+
+  <div id="cartContainer"></div>
+
+
+<div class="bottom-nav">
+  <a href="index.html" class="active"><div class="icon" style="background-image: url('https://clipground.com/images/white-home-icon-transparent-png-6.png');"></div>Home</a>
+  <a href="cart.html"><div class="icon" style="background-image: url('https://pngimg.com/uploads/shopping_cart/shopping_cart_PNG38.png');"></div>Cart</a>
+  <a href="support.html"><div class="icon" style="background-image: url('https://www.pngmart.com/files/7/Support-PNG-Picture.png');"></div>Support</a>
+</div>
+
+<script>
+document.addEventListener('DOMContentLoaded', displayCart);
+
+</script>
+
+  
+
+</body>
+</html>

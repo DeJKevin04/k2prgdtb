@@ -1,0 +1,35 @@
+.card {
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 10px;
+    margin: 10px;
+    width: 200px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .item-name {
+    font-size: 18px;
+    color: #333;
+  }
+  .item-price {
+    color: #666;
+  }
+  .quantity-adjuster {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+  }
+  .adjuster-button {
+    border: none;
+    background-color: #f2f2f2;
+    padding: 5px 10px;
+    cursor: pointer;
+  }
+  .quantity-num {
+    padding: 5px 10px;
+    border: 1px solid #ddd;
+    width: 50px;
+    text-align: center;
+  }
