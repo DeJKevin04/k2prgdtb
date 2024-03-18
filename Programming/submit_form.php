@@ -2,10 +2,10 @@
 $servername = "localhost";
 $username = "root"; // Your db username
 $password = ""; // Your db password
-$dbname = "mysql"; // Your db name
+$dbname = "feedback"; // Your db name
 
 // Create connection
-$conn = new mysqli('localhost', 'root', '', 'mysql');
+$conn = new mysqli('localhost', 'root', '', 'feedback');
 
 // Check connection
 if ($conn->connect_error) {
